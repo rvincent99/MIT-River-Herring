@@ -558,6 +558,7 @@ def check_dataset(data, autodownload=True):
         if not all(x.exists() for x in val):
             LOGGER.info("\nDataset not found ⚠️, missing paths %s" % [str(x) for x in val if not x.exists()])
             if not s or not autodownload:
+                print(s)
                 raise Exception("Dataset not found ❌")
             t = time.time()
             if s.startswith("http") and s.endswith(".zip"):  # URL

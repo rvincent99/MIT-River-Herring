@@ -5,12 +5,14 @@ from the raw dataset 1 (which contains frames and their respective annotations) 
 
 This means you can also add your own data as well. Input it into Roboflow and then get a corresponding data folder and .yaml file suitable for yolov5 (Yolov5 Pytorch format). Technically, you can also just create the .yaml file yourself.
 
-To start training a module, run this command in the command prompt:
-python train.py --img 640 --epochs "n" --data "path to .yaml file" --weights yolov5s.pt
+To start training a module, run this command in the command prompt (navigate to yolov5 directory first):
+python train.py --img 640 --epochs "n" --data "path to yaml" --weights yolov5s.pt
+ex: python train.py --img 640 --epochs "n" --data ./data/custom_data.yaml --weights yolov5s.pt
 change number of epochs as appropriate
 
-To validate an existing model, run this command in the command prompt:
+To validate an existing model, run this command in the command prompt (navigate to yolov5 directory first):
 python detect.py --source "path to test images to validate on" --weights "path to train weights" --img 640
+ex: python detect.py --source ./datasets/custom_dataset/test/images --weights ./runs/train/exp6/weights/best.pt --img 640
 
 Longer epochs take more computing power and longer time when training the weights!
 
