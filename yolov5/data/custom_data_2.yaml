@@ -1,0 +1,14 @@
+path: ./datasets/custom_dataset_2
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 4
+names: ['Perch', 'River Herring', 'Sunfish', 'Trout']
+
+roboflow:
+  workspace: riverherringproject
+  project: river_herring_images
+  version: 2
+  license: MIT
+  url: https://universe.roboflow.com/riverherringproject/river_herring_images/dataset/2
