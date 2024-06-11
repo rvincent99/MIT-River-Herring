@@ -7,8 +7,8 @@ train: train/images
 val: valid/images
 test: test/images
 
-nc: 3
-names: ['Perch', 'River Herring', 'Trout']
+nc: 4
+names: ['Perch', 'River Herring', 'Trout', 'Sunfish']
 
 roboflow:
   workspace: riverherringproject

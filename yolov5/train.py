@@ -502,6 +502,8 @@ def train(hyp, opt, device, callbacks):
                         compute_loss=compute_loss,
                     )  # val best model with plots
                     if is_coco:
+                        print("omg ellie is editing code to see what's going on")
+                        print("is coco")
                         callbacks.run("on_fit_epoch_end", list(mloss) + list(results) + lr, epoch, best_fitness, fi)
 
         callbacks.run("on_train_end", last, best, epoch, results)
