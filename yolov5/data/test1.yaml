@@ -1,0 +1,13 @@
+path: ./datasets/test1
+train: train/images
+val: valid/images
+
+nc: 5
+names: ['Bass', 'Perch', 'River Herring', 'Trout', 'Unknown Fish']
+
+roboflow:
+  workspace: mlriverherring
+  project: river-herring
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/mlriverherring/test1-adha9/dataset/1
