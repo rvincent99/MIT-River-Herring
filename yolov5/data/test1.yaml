@@ -1,6 +1,5 @@
 path: ./datasets/test1
-train: train/images
-val: valid/images
+test: test/images
 
 nc: 5
 names: ['Bass', 'Perch', 'River Herring', 'Trout', 'Unknown Fish']
