@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['Eel', 'River Herring', 'Trout', 'Unknown Fish']
+
+roboflow:
+  workspace: private-workspace-0nc7p
+  project: river-herring-eba1a
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/private-workspace-0nc7p/river-herring-eba1a/dataset/1
