@@ -1,6 +1,6 @@
 weights: yolov5s.pt
 cfg: ''
-data: ./data/dataset_1.yaml
+data: ./data/val1.yaml
 hyp:
   lr0: 0.01
   lrf: 0.01
@@ -30,7 +30,7 @@ hyp:
   mosaic: 1.0
   mixup: 0.0
   copy_paste: 0.0
-epochs: 5
+epochs: 100
 batch_size: 16
 imgsz: 640
 rect: false
@@ -40,7 +40,7 @@ noval: false
 noautoanchor: false
 noplots: false
 evolve: null
-evolve_population: data\hyps
+evolve_population: data/hyps
 resume_evolve: null
 bucket: ''
 cache: null
@@ -51,7 +51,7 @@ single_cls: false
 optimizer: SGD
 sync_bn: false
 workers: 8
-project: runs\train
+project: runs/train
 name: exp
 exist_ok: false
 quad: false
@@ -69,4 +69,4 @@ bbox_interval: -1
 artifact_alias: latest
 ndjson_console: false
 ndjson_file: false
-save_dir: runs\train\exp20
+save_dir: runs/train/exp18
