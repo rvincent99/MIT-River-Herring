@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['River Herring']
+
+roboflow:
+  workspace: private-workspace-0nc7p
+  project: river-herring_2
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/private-workspace-0nc7p/river-herring_2/dataset/1

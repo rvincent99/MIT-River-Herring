@@ -1,0 +1,18 @@
+# train: C:\Users\javno\Documents\river_herring_project\yolov5\datasets\custom_dataset\train
+# val: C:\Users\javno\Documents\river_herring_project\yolov5\datasets\custom_dataset\valid
+# test: C:\Users\javno\Documents\river_herring_project\yolov5\datasets\custom_dataset\test
+
+path: ./datasets/custom_dataset
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 4
+names: ['Perch', 'River Herring', 'Trout', 'Sunfish']
+
+roboflow:
+  workspace: riverherringproject
+  project: river_herring_images
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/riverherringproject/river_herring_images/dataset/1
