@@ -1,0 +1,18 @@
+This repository is essentially a yolov5 repository loaded with some our data from the first few datasets. If you have powerful enough PC, you can opt to run a training module on your own device, instead of over cloud. Later on we may wish to expand the number of datasets used. This guide does not refer to the Jupiter Notebook file, but rather the other repositories.
+
+The datasets used are located in yolov5/datasets/custom_dataset. This data is sourced
+from the raw dataset 1 (which contains frames and their respective annotations) after it was inputed into Roboflow. Roboflow will parse the .json annotation files and output an appropriate data format for yolov5 to use (YOLOV5 PYTORCH). This folder (custom_dataset) has test, train, and valid subfolders each with their own images and labels. Roboflow will also provide a custom .yaml file that you will need to provide a path to as well. The .yaml file for custom_dataset is located under yolov5/data/custom_data.yaml. Later on, when training a model, you will have to provide a path to this training folder in your .yaml file.
+
+This means you can also add your own data as well. Input it into Roboflow and then get a corresponding data folder and .yaml file suitable for yolov5 (Yolov5 Pytorch format). Technically, you can also just create the .yaml file yourself.
+
+To start training a module, run this command in the command prompt (navigate to yolov5 directory first):
+python train.py --img 640 --epochs "n" --data "path to yaml" --weights yolov5s.pt
+ex: python train.py --img 640 --epochs "n" --data ./data/custom_data.yaml --weights yolov5s.pt
+change number of epochs as appropriate
+
+To validate an existing model, run this command in the command prompt (navigate to yolov5 directory first):
+python detect.py --source "path to test images to validate on" --weights "path to train weights" --img 640
+ex: python detect.py --source ./datasets/custom_dataset/test/images --weights ./runs/train/exp6/weights/best.pt --img 640
+
+Longer epochs take more computing power and longer time when training the weights!
+
