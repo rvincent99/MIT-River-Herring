@@ -2,12 +2,12 @@ train: ../train/images
 val: ../valid/images
 test: ../test/images
 
-nc: 1
-names: ['River Herring']
+nc: 6
+names: ['Bass', 'Perch', 'River Herring', 'Sunfish', 'Trout', 'Unknown Fish']
 
 roboflow:
   workspace: private-workspace-0nc7p
   project: river-herring_2
-  version: 1
+  version: 2
   license: CC BY 4.0
-  url: https://universe.roboflow.com/private-workspace-0nc7p/river-herring_2/dataset/1
+  url: https://universe.roboflow.com/private-workspace-0nc7p/river-herring_2/dataset/2
