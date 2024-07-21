@@ -1,3 +1,4 @@
+
 path: ./datasets/custom_dataset_4
 train: train/images
 val: valid/images
@@ -9,6 +10,6 @@ names: ['Bass', 'Perch', 'River Herring', 'Sunfish', 'Trout', 'Unknown Fish']
 roboflow:
   workspace: private-workspace-0nc7p
   project: river-herring_2
-  version: 2
+  version: 3
   license: CC BY 4.0
-  url: https://universe.roboflow.com/private-workspace-0nc7p/river-herring_2/dataset/2
+  url: https://universe.roboflow.com/private-workspace-0nc7p/river-herring_2/dataset/3
