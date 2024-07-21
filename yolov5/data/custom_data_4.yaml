@@ -1,6 +1,7 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+path: ./datasets/custom_dataset_4
+train: train/images
+val: valid/images
+test: test/images
 
 nc: 6
 names: ['Bass', 'Perch', 'River Herring', 'Sunfish', 'Trout', 'Unknown Fish']
