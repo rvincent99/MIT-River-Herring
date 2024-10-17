@@ -1,4 +1,3 @@
-
 path: ./datasets/custom_dataset_4
 train: train/images
 val: valid/images

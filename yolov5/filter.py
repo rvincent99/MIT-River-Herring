@@ -30,7 +30,6 @@ for empty in nothing:
         count += 1
         empty_label = empty + ".txt"
         empty_img = empty + ".jpg"
-        print(empty)
         os.remove(os.path.join(image_path, empty_img))
         os.remove(os.path.join(label_path, empty_label))
 
